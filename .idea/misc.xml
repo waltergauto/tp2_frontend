@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Walter/AppData/Local/Android/Sdk/platforms/android-28/data/res/layout/simple_list_item_1.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_add_ventas.xml" value="0.264" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_menu.xml" value="0.1265625" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_menu_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_menu_filtro.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_vendedores.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/activity_ventas.xml" value="0.264" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/layout/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Walter/Desktop/Sistema_Inventario_Android/app/src/main/res/menu/menu_filtro.xml" value="0.16458333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
