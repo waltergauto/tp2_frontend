@@ -4,7 +4,7 @@ public class client {
     private String id;
     private String nombre;
     private String rif;
-    private String direccion;
+    private String email;
 
     public String getId() {
         return id;
@@ -30,18 +30,18 @@ public class client {
         this.rif = rif;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setEmail(String email ) {
+        this.email = email;
     }
 
-    public client(String id, String nombre, String rif, String direccion) {
+    public client(String id, String nombre, String rif, String email) {
         this.id = id;
         this.nombre = nombre;
         this.rif = rif;
-        this.direccion = direccion;
+        this.email = email;
     }
 }

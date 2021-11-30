@@ -6,11 +6,11 @@ public class tab_client {
     public static final String ID_CLIENTES="ID";
     public static final String CAMPO_NOMBRE="NOMBRE";
     public static final String CAMPO_RIF="RIF";
-    public static final String CAMPO_DIRECCION="DIRECCION";
+    public static final String CAMPO_EMAIL="EMAIL";
     //CREAR TABLA CLIENTES
     public static final String CREAR_TABLA_CLIENTE="CREATE TABLE " +
             ""+TABLA_CLIENTE+" ("+ID_CLIENTES+" " +
-            "TEXT, "+CAMPO_NOMBRE+" TEXT,"+CAMPO_RIF+" TEXT,"+CAMPO_DIRECCION+" TEXT)";
+            "TEXT, "+CAMPO_NOMBRE+" TEXT,"+CAMPO_RIF+" TEXT,"+CAMPO_EMAIL+" TEXT)";
 
 
 }

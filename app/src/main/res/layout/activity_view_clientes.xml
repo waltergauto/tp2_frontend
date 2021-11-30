@@ -111,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Rif:"
+                android:text="Ruc:"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -165,11 +165,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Direccion:"
+                android:text="Email:"
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/direccion"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

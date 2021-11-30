@@ -82,7 +82,7 @@ public class Clientes extends AppCompatActivity {
         if (checkdb(c)) {
             c.moveToFirst();
             do{
-                adapter.add(c.getString(1) + "\n RIF: "+ c.getString(2));
+                adapter.add(c.getString(1) + "\n Ruc: "+ c.getString(2));
             }while(c.moveToNext());
             lista.setAdapter(adapter);
             c.close();

@@ -29,7 +29,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
     Spinner rifident;
     FloatingActionButton yes;
     int iterator;
-    String nombre,rif2,direccion;
+    String nombre,rif2,email;
     int band_edit=0;
     int grade;
     ConexionSQLiteHelper conn=new ConexionSQLiteHelper(this, tab_client.TABLA_CLIENTE,null,1);
@@ -53,7 +53,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         n=(EditText) findViewById(R.id.nombre);
         r=(EditText) findViewById(R.id.rif2);
-        d=(EditText) findViewById(R.id.direccion);
+        d=(EditText) findViewById(R.id.email);
         back = (ImageView) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -70,7 +70,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
         n.setEnabled(false);
         r.setText(rif2);
         r.setEnabled(false);
-        d.setText(direccion);
+        d.setText(email);
         d.setEnabled(false);
         edit = (ImageView) findViewById(R.id.edit);
         yes = (FloatingActionButton) findViewById(R.id.b_yes);
@@ -101,7 +101,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
                             promptDialogyes();
                             Toast.makeText(getApplicationContext(),"Registrado con exito",Toast.LENGTH_SHORT).show();
                         }else{
-                            Toast.makeText(getApplicationContext(),"Direccion esta vacio",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Email esta vacio",Toast.LENGTH_SHORT).show();
                         }
                     }else{
                         Toast.makeText(getApplicationContext(),"Error en RIF",Toast.LENGTH_SHORT).show();
@@ -152,7 +152,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
         }
         nombre = c.getString(1).toString().toUpperCase();
         rif2 = c.getString(2).toString().substring(2);
-        direccion = c.getString(3).toString();
+        email = c.getString(3).toString();
         db.close();
     }
     public Boolean checkdb(Cursor c){
@@ -183,7 +183,7 @@ public class edit_clientes extends AppCompatActivity implements AdapterView.OnIt
         values.put(tab_client.ID_CLIENTES,Row);
         values.put(tab_client.CAMPO_NOMBRE,n.getText().toString().toUpperCase());
         values.put(tab_client.CAMPO_RIF,rifident.getSelectedItem().toString()+"-"+r.getText().toString());
-        values.put(tab_client.CAMPO_DIRECCION,d.getText().toString());
+        values.put(tab_client.CAMPO_EMAIL,d.getText().toString());
 
         db.insert(tab_client.TABLA_CLIENTE, tab_client.CAMPO_NOMBRE,values);
         c = db.rawQuery("SELECT * FROM "+ tab_client.TABLA_CLIENTE,null);

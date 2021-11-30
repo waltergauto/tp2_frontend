@@ -43,7 +43,8 @@ public class add_clientes extends AppCompatActivity implements AdapterView.OnIte
         rifident.setOnItemSelectedListener(this);
         n= (EditText) findViewById(R.id.nombre);
         r= (EditText) findViewById(R.id.rif2);
-        d= (EditText) findViewById(R.id.direccion);
+        //d= (EditText) findViewById(R.id.direccion);
+        d= (EditText) findViewById(R.id.email);
         back = (ImageView) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -56,7 +57,7 @@ public class add_clientes extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View view){
                 if (isStr(n.getText().toString().toUpperCase())){
-                    if (isInt(r.getText().toString()) && r.getText().toString().length()==9){
+                    if (isInt(r.getText().toString()) && r.getText().toString().length()==7){
                         if (isStr(d.getText().toString())){
                             if(!isExist(rifident.getSelectedItem().toString()+"-"+r.getText().toString())){
                                 registrar();
@@ -66,10 +67,10 @@ public class add_clientes extends AppCompatActivity implements AdapterView.OnIte
                                 Toast.makeText(getApplicationContext(),"El cliente ya esta registrado",Toast.LENGTH_SHORT).show();
                             }
                         }else{
-                            Toast.makeText(getApplicationContext()," Direccion esta vacio",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext()," Email esta vacio",Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(getApplicationContext(),"Error en RIF",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Error en RUC",Toast.LENGTH_SHORT).show();
                     }
 
                 }else{
@@ -154,7 +155,7 @@ public class add_clientes extends AppCompatActivity implements AdapterView.OnIte
         values.put(tab_client.ID_CLIENTES,Row);
         values.put(tab_client.CAMPO_NOMBRE,n.getText().toString().toUpperCase());
         values.put(tab_client.CAMPO_RIF,rifident.getSelectedItem().toString()+"-"+r.getText().toString());
-        values.put(tab_client.CAMPO_DIRECCION,d.getText().toString());
+        values.put(tab_client.CAMPO_EMAIL,d.getText().toString());
         db.insert(tab_client.TABLA_CLIENTE, tab_client.CAMPO_NOMBRE,values);
         c = db.rawQuery("SELECT * FROM "+ tab_client.TABLA_CLIENTE,null);
         c.moveToFirst();

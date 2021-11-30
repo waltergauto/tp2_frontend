@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1346b43f-f886-4d0a-add0-e7520daf1d8e" name="Default Changelist" comment="Se agrega proyecto android tp2 frontend" />
+    <list default="true" id="1346b43f-f886-4d0a-add0-e7520daf1d8e" name="Default Changelist" comment="Se agrega proyecto android tp2 frontend">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/ADD/add_clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/ADD/add_clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/EDIT/edit_clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/EDIT/edit_clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/ENTIDADES_TABLAS/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/ENTIDADES_TABLAS/client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/MAIN_OPTIONS/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/MAIN_OPTIONS/Clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/TABLAS/tab_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/unknown/Sistema_Inventario_Android/TABLAS/tab_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_clientes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_clientes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_clientes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_clientes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638241167452</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agrega proyecto android tp2 frontend">
+      <created>1638313223916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638313223916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
