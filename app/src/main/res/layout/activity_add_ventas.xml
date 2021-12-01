@@ -67,7 +67,7 @@
                 android:textSize="20sp" />
 
             <Spinner
-                android:id="@+id/spinner-cliente"
+                android:id="@+id/spinner_cliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -78,13 +78,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Moneda:"
-                android:textSize="20sp" />
+                android:textSize="20sp"/>
 
             <Spinner
-                android:id="@+id/spinner-moneda"
+                android:id="@+id/spinner_moneda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
         </LinearLayout>
 
@@ -109,19 +109,19 @@
                 android:orientation="horizontal">
 
                 <Spinner
-                    android:id="@+id/spinner-cproducto"
+                    android:id="@+id/spinner_cproducto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4" />
 
                 <Spinner
-                    android:id="@+id/spinner-cantidad"
+                    android:id="@+id/spinner_cantidad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="8" />
 
                 <Button
-                    android:id="@+id/add-producto"
+                    android:id="@+id/add_producto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -153,7 +153,7 @@
             android:orientation="vertical">
 
             <ListView
-                android:id="@+id/lista-productos"
+                android:id="@+id/lista_productos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />

@@ -21,7 +21,13 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.sql.SQLOutput;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -38,10 +44,17 @@ public class add_ventas extends AppCompatActivity implements AdapterView.OnItemS
     ListView lista;
     FloatingActionButton y;
     Spinner cliente,producto,cantidad,moneda;
+    //EditText nro_factura;
     Button add;
     ArrayAdapter<String> adapterp;
     List<String> b = new ArrayList<String>();
     List<String> idProd = new ArrayList<>();
+
+    /*
+
+       n=(EditText) findViewById(R.id.nombre);
+       p=(EditText) findViewById(R.id.precio);
+       d=(EditText) findViewById(R.id.disponibilidad);*/
 
     int grade;
     int pos=0;
@@ -64,7 +77,8 @@ public class add_ventas extends AppCompatActivity implements AdapterView.OnItemS
         cliente=(Spinner) findViewById(R.id.spinner_cliente);
         producto=(Spinner) findViewById(R.id.spinner_cproducto);
         cantidad=(Spinner) findViewById(R.id.spinner_cantidad);
-        moneda=(Spinner) findViewById(R.id.spinner_moneda);
+        //fecha_venta = findViewById(R.id.edit_fecha_venta);
+        //nro_factura = findViewById(R.id.edit_numero_factura);
 
         producto.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -280,11 +294,17 @@ public class add_ventas extends AppCompatActivity implements AdapterView.OnItemS
         //values.put(tab_vent.CAMPO_COMPRADOR,cliente.getSelectedItem().toString());
         //values.put(tab_vent.CAMPO_PRODUCTOS,producto.getSelectedItem().toString());
 
-        int index;
+        int index, index2;
         int count = lista.getAdapter().getCount();
         Object object;
         char id_producto;
         String value;
+        char precio_producto;
+        char cantidad_producto;
+        char aux;
+        int precio_producto_numerico;
+        int cantidad_producto_numerico;
+        int total_parcial;
 
         Cursor c = db.rawQuery("SELECT "+ tab_vent.ID_VENTAS+" FROM "+ tab_vent.TABLA_VENTA+" ORDER BY " + tab_vent.ID_VENTAS+ " asc",null);
 
@@ -295,15 +315,29 @@ public class add_ventas extends AppCompatActivity implements AdapterView.OnItemS
             Row=""+(Integer.parseInt(c.getString(0))+1);
         }
 
+        long ahora = System.currentTimeMillis();
+        Date fecha = new Date(ahora);
+        DateFormat df = new SimpleDateFormat("dd/MM/yy");
+        String salida = df.format(fecha);
+        int inicio_nro_factura = 1000;
+
         for (index = 0; index < count; index++ ) {
 
             object =  lista.getAdapter().getItem(index);
             value = object.toString();
             id_producto = value.charAt (0);
+            cantidad_producto = value.charAt(2);
+            precio_producto = value.charAt(4);
+            precio_producto_numerico = Character.getNumericValue(precio_producto);
+            cantidad_producto_numerico = Character.getNumericValue(cantidad_producto);
+            total_parcial = precio_producto_numerico*cantidad_producto_numerico;
 
-            values.put(tab_vent.ID_VENTAS,Row);
+            values.put(tab_vent.ID_VENTAS, Row);
+            values.put(tab_vent.NRO_FACTURA, Integer.toString(inicio_nro_factura));
+            values.put(tab_vent.FECHA_VENTA, salida);
             values.put(tab_vent.CAMPO_COMPRADOR,cliente.getSelectedItem().toString());
             values.put(tab_vent.CAMPO_PRODUCTOS, Character.toString(id_producto));
+            values.put(tab_vent.TOTAL_PARCIAL, Integer.toString(total_parcial));
 
             db.insert(tab_vent.TABLA_VENTA, tab_vent.ID_VENTAS,values);
         }

@@ -73,7 +73,7 @@ public class Ventas extends AppCompatActivity {
             c.moveToFirst();
 
             do{
-                adapter.add("ID Venta:" + c.getString(0) + "\nCliente: "+ c.getString(1) );
+                adapter.add("ID Venta:" + c.getString(0) + "\t\t\tFecha: " + c.getString(1) + "\t\t\tNro Fact: " + c.getString(2) + "\nCliente: "+ c.getString(3) );
             }while(c.moveToNext());
             lista.setAdapter(adapter);
             db.close();
